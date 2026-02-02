@@ -179,3 +179,19 @@ You can monitor progress in the Airflow UI and view task logs for debugging.
 │       └── final_project_sql_statements.py
 ├── create_tables.sql
 └── drop_tables.sql
+
+```
+
+## Troubleshooting
+
+Staging tasks fail (COPY errors):
+ - confirm aws_credentials connection
+ - confirm S3 paths + region
+ - confirm Redshift IAM permissions to read S3
+
+Data quality fails:
+ - check upstream task logs (staging + loads)
+ - verify your create_tables.sql matches the expected schema
+
+Airflow Variables missing:
+ - set s3_bucket and s3_prefix in the Airflow UI
