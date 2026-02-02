@@ -80,7 +80,7 @@ The DAG is scheduled to run **hourly** (`@hourly`) and does **not** backfill (`c
 - Dimensions: `users`, `songs`, `artists`, `time`
 
 SQL insert statements are referenced from:
-- `udacity.common.final_project_sql_statements.SqlQueries`
+- `common.final_project_sql_statements.SqlQueries`
 
 ---
 
