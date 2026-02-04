@@ -13,7 +13,7 @@ from udacity.common.final_project_sql_statements import SqlQueries
 
 
 default_args = {
-    "owner": "udacity",
+    "owner": "mila",
     "depends_on_past": False,
     "retries": 3,
     "retry_delay": timedelta(minutes=5),
